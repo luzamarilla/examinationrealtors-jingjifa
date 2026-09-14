@@ -7,7 +7,7 @@
   <div>
     <div style="font-size:13px;opacity:.7;margin-bottom:5px;">114年 不動產經紀人考試｜經紀法・複習版（範本）</div>
     <h1>複習版｜L1+L2 不動產經紀業管理條例</h1>
-    <div class="subtitle">依考古題逐年命中頻率＋老師課堂強調排序，出題率越高越往前・左欄考點／右欄答案，可用紙遮住右欄背誦</div>
+    <div class="subtitle">依考古題逐年命中頻率＋老師課堂強調排序，出題率越高越往前</div>
   </div>
   <div style="display:flex;gap:14px;">
     <div class="badge"><strong>4級</strong>依頻率分組</div>
@@ -16,7 +16,6 @@
   </div>
 </div>
 
-<div class="mini-note" style="margin-bottom:16px;">📌 排序邏輯：依考古題逐年命中年數（105-114共10年，年數越多排越前）分成四級；同級內再依是否有申論命中／老師★強調決定順序。內容整理自既有已上線筆記（`經紀法L1L2_不動產經紀業管理條例_視覺化筆記.html`），非重新查證。這是「情境版→複習版」規劃的第一份範本，滿意後再套其他三份（L3-4／L5-6／L7-8）。</div>
 
 <section class="section">
   <div class="tier-head tier1">🔥 最高頻（8-9年全中）</div>
@@ -32,7 +31,7 @@
     <tr><td class="term">不得記載事項⑥</td><td class="ans">記載房價有上漲空間，或預測房價上漲</td></tr>
     <tr><td class="term">陷阱（108測10）</td><td class="ans">「附屬建物除陽台外其餘不得計入買賣價格」<b>不屬於</b>上述六款</td></tr>
     <tr><td class="term">解說義務 §23</td><td class="ans">解說前應經委託人簽章；經紀人應親自向相對人解說</td></tr>
-    <tr><td class="term">交付及效力 §24<span class="examhit">108申論二完整命題</span></td><td class="ans">簽約時交付相對人並由其簽章，說明書<b>視為契約書之一部分</b></td></tr>
+    <tr><td class="term">交付及效力 §24<span class="examhit">108申論</span></td><td class="ans">簽約時交付相對人並由其簽章，說明書<b>視為契約書之一部分</b></td></tr>
     <tr><td class="term">違反罰則</td><td class="ans">業§29Ⅰ①6～30萬／人員§31Ⅰ①申誡</td></tr>
   </table>
 
@@ -122,7 +121,7 @@
   <table class="memo-table">
     <tr><td class="term">業之責任</td><td class="ans">可歸責經紀業事由致委託人受損害，業負賠償責任</td></tr>
     <tr><td class="term">連帶責任</td><td class="ans">因人員故意過失致當事人受損害，<b>業與人員負連帶賠償責任</b></td></tr>
-    <tr><td class="term">代為賠償</td><td class="ans">受害人得向全聯會請求代為賠償</td></tr>
+    <tr><td class="term">代為賠償</td><td class="ans">受害人得向全聯會請求代為賠償，<b>視為已向基金管理委員會申請調處</b>；代為賠償後，通知經紀業<b>1個月內補足</b>營業保證金</td></tr>
   </table>
 
   <div class="group-title">§4 用辭定義（其餘）<span class="examhit">2年：106/112</span></div>
@@ -211,4 +210,33 @@ body{margin:0;}
 .examhit{display:inline-block; margin-left:8px; font-size:11.5px; font-weight:800; color:var(--accent); background:var(--accent-bg); border:1px solid var(--accent); border-radius:10px; padding:1px 9px; vertical-align:middle;}
 
 .footer{text-align:center; color:var(--sub); font-size:13px; margin-top:10px; padding-top:8px; border-top:1px solid var(--line);}
+
+/* ===== 列印版（A4）===== */
+@media print {
+  @page { size: A4; margin: 12mm 10mm; }
+  *{-webkit-print-color-adjust:exact!important; print-color-adjust:exact!important; color-adjust:exact!important;}
+  body{background:#fff;}
+  .page{width:auto; max-width:100%; margin:0; padding:0;}
+  .page-header{background:#fff; color:var(--ink); border:2px solid var(--ink); border-radius:6px; padding:12px 18px;}
+  .page-header h1{font-size:19px;}
+  .page-header .subtitle{font-size:10.5px;}
+  .page-header .badge{background:var(--neutral-bg); color:var(--ink); border:1px solid var(--line-strong); padding:5px 10px;}
+  .page-header .badge strong{font-size:13px;}
+  .section{margin-bottom:10px;}
+  .tier-head{color:var(--ink); border-left:6px solid var(--neutral); border-radius:4px; font-size:14px; padding:6px 14px; margin-bottom:8px; page-break-inside:avoid; break-inside:avoid; page-break-after:avoid; break-after:avoid;}
+  .tier-head.tier1{background:var(--accent-bg)!important; border-color:var(--accent);}
+  .tier-head.tier2{background:var(--accent2-bg)!important; border-color:var(--accent2);}
+  .tier-head.tier3{background:var(--neutral-bg)!important; border-color:var(--neutral);}
+  .tier-head.tier4{background:#eef1f4!important; border-color:var(--sub);}
+  .group-title{font-size:12.5px; margin:8px 0 4px; page-break-after:avoid; break-after:avoid;}
+  .mini-note{font-size:10px; padding:4px 9px;}
+  .memo-table, .compare-table{font-size:10.5px;}
+  .memo-table td, .compare-table td, .compare-table th{padding:4px 8px;}
+  .memo-table tr, .compare-table tr{page-break-inside:avoid; break-inside:avoid;}
+  .lesson-tag, .law-ref{font-size:9.5px;}
+  .examhit{font-size:9.5px;}
+  .memo-table td.term .examhit, .compare-table td.term .examhit{font-size:8px; padding:0 4px; margin-left:4px;}
+  .footer{font-size:10px; margin-top:6px; padding-top:5px;}
+  a{color:inherit; text-decoration:none;}
+}
 </style>
