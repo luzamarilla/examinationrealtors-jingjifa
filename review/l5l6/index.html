@@ -7,16 +7,12 @@
   <div>
     <div style="font-size:13px;opacity:.7;margin-bottom:5px;">114年 不動產經紀人考試｜經紀法・複習版</div>
     <h1>複習版｜L5+L6 消費者保護法</h1>
-    <div class="subtitle">依考古題逐年命中頻率＋老師課堂強調排序，出題率越高越往前・左欄考點／右欄答案，可用紙遮住右欄背誦</div>
   </div>
   <div style="display:flex;gap:14px;">
     <div class="badge"><strong>4級</strong>依頻率分組</div>
-    <div class="badge"><strong>遮答案</strong>背誦格式</div>
     <div class="badge"><strong>⭐⭐⭐⭐</strong>審閱期＋申訴調解最高頻</div>
   </div>
 </div>
-
-<div class="mini-note" style="margin-bottom:16px;">📌 排序邏輯：依考古題逐年命中年數（105-114共10年，年數越多排越前）分成四級；同級內再依是否有申論命中／老師★強調決定順序。內容整理自既有已上線筆記（`經紀法L5L6_消費者保護法_視覺化筆記.html`）＋`經紀法L1-L8_考古題深查.md`，非重新查證。比照L1+L2複習版範本格式製作。</div>
 
 <section class="section">
   <div class="tier-head tier1">🔥 最高頻（7年）</div>
@@ -29,7 +25,6 @@
     <tr><td class="term">誠信原則 §12</td><td class="ans">條款違反誠信原則，對消費者顯失公平 → <b>無效</b>；推定顯失公平3款（與Ⅰ項並列非窮盡）：違反平等互惠原則／與立法意旨顯相矛盾／契約目的難以達成</td></tr>
     <tr><td class="term">判斷口訣<span class="exam-star">★</span></td><td class="ans">問題出在「消費者有沒有機會看／同意」（程序）→<b>不構成契約內容</b>；問題出在「條款內容本身公不公平」（實質）→<b>無效</b></td></tr>
     <tr><td class="term">牴觸個別磋商 §15、§16</td><td class="ans">定型化條款<b>牴觸</b>個別磋商條款者，牴觸部分無效，其餘仍有效；<span class="trap">但對當事人一方顯失公平者，契約全部無效</span></td></tr>
-    <tr><td class="term">陷阱（108/111測）</td><td class="ans">市占率超過50%<b>不當然</b>構成違反平等互惠原則（109測21）；定型化契約條款未經明示公告內容<b>不當然</b>成為契約內容（109測19，§13）</td></tr>
   </table>
 
   <div class="group-title">申訴與調解程序 <span class="law-ref">§43-§46</span><span class="examhit">7年：105/106/108/110/111/112/114｜114申論一完整命題</span></div>
@@ -116,7 +111,7 @@
     <tr><td class="term">管轄與專庭 §47、§48</td><td class="ans">得由<b>消費關係發生地</b>法院管轄；得設<b>消費專庭</b>；企業經營者敗訴得依職權宣告<b>減免擔保之假執行</b></td></tr>
     <tr><td class="term">懲罰性賠償金 §51<span class="exam-star">★★</span></td><td class="ans">故意<b>5倍以下</b>・重大過失<b>3倍以下</b>・過失<b>1倍以下</b>（比公平法故意最高3倍更高）</td></tr>
     <tr><td class="term">訴請停止 §53／選定當事人 §54</td><td class="ans">消保官／消保團體對<b>重大</b>違法行為得訴請停止或禁止，<b>免繳裁判費</b>；§54選定當事人是消費者<b>自己</b>選代表人打官司（跟§50消保團體<b>受讓</b>請求權不同）</td></tr>
-    <tr><td class="term">罰則記憶法</td><td class="ans">依金額排序：2萬-20萬（標示包裝保證書）＜3萬-30萬（定型化契約應記載未改正／拒絕查核調查）＜6萬-150萬（違反命令權）＜15萬-150萬（違反公告權，本表最高固定金額）；另有§60情節重大得<b>立即命令停業</b>不列入排序</td></tr>
+    <tr><td class="term">罰則記憶法</td><td class="ans">依金額排序：2萬-20萬（標示包裝保證書）＜3萬-30萬（定型化契約應記載未改正／拒絕查核調查）＜6萬-150萬（違反命令權）＜15萬-150萬（有§37重大損害＋情況危急情形即得罰，不是違反公告才罰；本表最高固定金額）；另有§60情節重大得<b>立即命令停業</b>不列入排序</td></tr>
   </table>
 </section>
 
@@ -180,4 +175,33 @@ body{margin:0;}
 .examhit{display:inline-block; margin-left:8px; font-size:11.5px; font-weight:800; color:var(--accent); background:var(--accent-bg); border:1px solid var(--accent); border-radius:10px; padding:1px 9px; vertical-align:middle;}
 
 .footer{text-align:center; color:var(--sub); font-size:13px; margin-top:10px; padding-top:8px; border-top:1px solid var(--line);}
+
+/* ===== 列印版（A4）===== */
+@media print {
+  @page { size: A4; margin: 12mm 10mm; }
+  *{-webkit-print-color-adjust:exact!important; print-color-adjust:exact!important; color-adjust:exact!important;}
+  body{background:#fff;}
+  .page{width:auto; max-width:100%; margin:0; padding:0;}
+  .page-header{background:#fff; color:var(--ink); border:2px solid var(--ink); border-radius:6px; padding:12px 18px;}
+  .page-header h1{font-size:19px;}
+  .page-header .subtitle{font-size:10.5px;}
+  .page-header .badge{background:var(--neutral-bg); color:var(--ink); border:1px solid var(--line-strong); padding:5px 10px;}
+  .page-header .badge strong{font-size:13px;}
+  .section{margin-bottom:10px;}
+  .tier-head{color:var(--ink); border-left:6px solid var(--neutral); border-radius:4px; font-size:14px; padding:6px 14px; margin-bottom:8px; page-break-inside:avoid; break-inside:avoid; page-break-after:avoid; break-after:avoid;}
+  .tier-head.tier1{background:var(--accent-bg)!important; border-color:var(--accent);}
+  .tier-head.tier2{background:var(--accent2-bg)!important; border-color:var(--accent2);}
+  .tier-head.tier3{background:var(--neutral-bg)!important; border-color:var(--neutral);}
+  .tier-head.tier4{background:#eef1f4!important; border-color:var(--sub);}
+  .group-title{font-size:12.5px; margin:8px 0 4px; page-break-after:avoid; break-after:avoid;}
+  .mini-note{font-size:10px; padding:4px 9px;}
+  .memo-table, .compare-table{font-size:10.5px;}
+  .memo-table td, .compare-table td, .compare-table th{padding:4px 8px;}
+  .memo-table tr, .compare-table tr{page-break-inside:avoid; break-inside:avoid;}
+  .lesson-tag, .law-ref{font-size:9.5px;}
+  .examhit{font-size:9.5px;}
+  .memo-table td.term .examhit, .compare-table td.term .examhit{font-size:8px; padding:0 4px; margin-left:4px;}
+  .footer{font-size:10px; margin-top:6px; padding-top:5px;}
+  a{color:inherit; text-decoration:none;}
+}
 </style>
